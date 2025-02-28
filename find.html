@@ -133,7 +133,7 @@
       const castList = document.getElementById("cast-list");
       const goBackBtn = document.getElementById("go-back-btn");
 
-      window.addEventListener("load", () => {
+      window.addEventListener("pageshow", () => {
         // If user navigates back from cast details, show the 'Go Back' button if needed
         if (sessionStorage.getItem("fromCastPage")) {
           goBackBtn.style.display = "inline-block";
